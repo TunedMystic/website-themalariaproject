@@ -4,11 +4,70 @@
    Author's custom styles
    ========================================================================== */
 
+.subHeader {
+	color: #7E7E7E;
+}
 
+.projectTitle {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+#slides {
+  display: none;
+  /*width: 700px;*/
+  height: 400px;
+  margin: 0 auto;
+}
 
+.slidesjs-container {
+	/*width: 90% !important;
+	height: 90% !important;*/
+	margin: 0 auto;
+}
 
+.main-ul-links {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	padding-top: 40px;
+}
 
+.main-ul-links li a:hover {
+	text-decoration: none;
+}
+
+/* responsive display */
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container {
+    width: auto
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .container {
+    width: auto
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px
+  }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
 
 
 

@@ -12,10 +12,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
+            
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -28,7 +25,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,29 +34,58 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="index.html">iCHTaSi</a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive center-block" src="img/ichtasi_logo.png" alt="Logo">
+        </div>
       </div>
+      <div class="row text-center">
+        <h3 class="subHeader">International Center for Humanitarian Technology Automation and Social Innovation</h3>
+      </div>
+    </div>
+
+    <div class="jumbotron projectTitle">
+      <div class="container text-center">
+        <h1>The Malaria Project</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="main-ul-links">
+            <li><a href=""><h2>About</h2></a></li>
+            <li><a href=""><h2>Team</h2></a></li>
+            <li><a href=""><h2>Projects</h2></a></li>
+            <li><a href=""><h2>Links</h2></a></li>
+            <li><a href=""><h2>FAQ</h2></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-8"> <!-- Slides -->
+          <div id="slides">
+            <img class="img-responsive" src="http://placehold.it/700x400/B8C7DB/000000" alt="Image1" width="700" height="400">
+            <img class="img-responsive" src="http://placehold.it/700x400/BD5BBD/000000" alt="Image2" width="700" height="400">
+            <img class="img-responsive" src="http://placehold.it/700x400/A6CC54/000000" alt="Image3" width="700" height="400">
+          </div> <!-- [END] slides -->
+        </div>
+
+      </div> <!-- [END] row -->
     </div>
 
     <div class="container">
@@ -92,7 +118,36 @@
         <script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/jquery.slides.min.js"></script>
 
         <script src="js/main.js"></script>
+
+        <script>
+           $(function() {
+             $("#slides").slidesjs({
+               width: 300,
+               height: 300,
+               play: {
+                active: false,
+                  // [boolean] Generate the play and stop buttons.
+                  // You cannot use your own buttons. Sorry.
+                effect: "slide",
+                  // [string] Can be either "slide" or "fade".
+                interval: 5000,
+                  // [number] Time spent on each slide in milliseconds.
+                auto: true,
+                  // [boolean] Start playing the slideshow on load.
+                swap: true,
+                  // [boolean] show/hide stop and play buttons
+                pauseOnHover: false,
+                  // [boolean] pause a playing slideshow on hover
+                restartDelay: 2500
+                  // [number] restart delay on inactive slideshow
+               },
+               navigation: {active: false},
+               pagination: {active: false}
+             });
+           });
+        </script>
     </body>
 </html>
