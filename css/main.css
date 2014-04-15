@@ -1,5 +1,4 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -93,6 +92,10 @@
 	color: #577799;
 }
 
+.sliderDiv {
+        background-color: rgb(227, 235, 238);
+}
+
 #page-footer {
 	background-color: #222;
 }
@@ -103,6 +106,8 @@
 
 .lowerInfo h2 {
 	color: #D1450F;
+	border-bottom: 1px dashed rgb(153, 153, 153);
+        padding-bottom: 5px;
 }
 
 
