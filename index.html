@@ -11,9 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -69,19 +66,19 @@
       <div class="row">
         <div class="col-md-4">
           <ul class="main-ul-links">
-            <li><a href=""><h2>About</h2></a></li>
-            <li><a href=""><h2>Team</h2></a></li>
-            <li><a href=""><h2>Projects</h2></a></li>
-            <li><a href=""><h2>Links</h2></a></li>
-            <li><a href=""><h2>FAQ</h2></a></li>
+            <li><a href="about.html"><h2>About</h2></a></li>
+            <li><a href="team.html"><h2>Team</h2></a></li>
+            <li><a href="projects.html"><h2>Projects</h2></a></li>
+            <li><a href="links.html"><h2>Links</h2></a></li>
+            <li><a href="faq.html"><h2>FAQ</h2></a></li>
           </ul>
         </div>
 
         <div class="col-md-8"> <!-- Slides -->
           <div id="slides">
-            <img class="img-responsive" src="http://placehold.it/700x400/B8C7DB/000000" alt="Image1" width="700" height="400">
-            <img class="img-responsive" src="http://placehold.it/700x400/BD5BBD/000000" alt="Image2" width="700" height="400">
-            <img class="img-responsive" src="http://placehold.it/700x400/A6CC54/000000" alt="Image3" width="700" height="400">
+            <img class="img-responsive" src="img/slide1.jpg" alt="Image1" width="700" height="400">
+            <img class="img-responsive" src="img/slide2.jpg" alt="Image2" width="700" height="400">
+            <img class="img-responsive" src="img/slide3.jpg" alt="Image3" width="700" height="400">
           </div> <!-- [END] slides -->
         </div>
 
@@ -90,30 +87,48 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row lowerInfo">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Meet the team</h2>
+          <p>We are a passionate group of Students and Professors who are dedicated to building things from the gound up. Our diverse fields of study give us a unique perspective when analyzing research problems. As such, we always aim towards meeting and exceeding the goals of our research.</p>
+          <p><a class="btn btn-default" href="team.html" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>The MedizDroid Project</h2>
+          <p>the research, development and deployment of technological ecosystems and infrastructures that enable and facilitate the use of flying robots, or airborne platforms in malaria mosquito vector management</p>
+          <p><a class="btn btn-default" href="projects.html" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>The KOMKOM Project</h2>
+          <p>KOMKOM (<strong>Keep out</strong> {"<strong>Mosquitos</strong>", "<strong>Malaria</strong>"}) is a concept to segregate, separate, isolate or physically keep humans and mosquitoes away from each other. This will significantly aid all efforts of malaria control, suppression, and reduction.</p>
+          <p><a class="btn btn-default" href="projects.html" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
       <hr>
+    </div> <!-- /container -->
 
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->        
+    <footer id="page-footer">
+      <div class="container">
+        <div class="row text-center">
+          <ul class="footerLinks">
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <hr />
+        <div class="row text-center subtleLink">
+          <p>Developed by <a href="http://smallcode.me" target="_blank">Sandeep Jadoonanan</a></p>
+        </div>
+
+      </div>
+    </footer>
+
+
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.0.min.js"><\/script>')</script>
 
@@ -121,33 +136,5 @@
         <script src="js/lib/jquery.slides.min.js"></script>
 
         <script src="js/main.js"></script>
-
-        <script>
-           $(function() {
-             $("#slides").slidesjs({
-               width: 300,
-               height: 300,
-               play: {
-                active: false,
-                  // [boolean] Generate the play and stop buttons.
-                  // You cannot use your own buttons. Sorry.
-                effect: "slide",
-                  // [string] Can be either "slide" or "fade".
-                interval: 5000,
-                  // [number] Time spent on each slide in milliseconds.
-                auto: true,
-                  // [boolean] Start playing the slideshow on load.
-                swap: true,
-                  // [boolean] show/hide stop and play buttons
-                pauseOnHover: false,
-                  // [boolean] pause a playing slideshow on hover
-                restartDelay: 2500
-                  // [number] restart delay on inactive slideshow
-               },
-               navigation: {active: false},
-               pagination: {active: false}
-             });
-           });
-        </script>
     </body>
 </html>
