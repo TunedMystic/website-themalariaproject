@@ -1,0 +1,195 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.subHeader {
+	color: #7E7E7E;
+}
+
+.projectTitle {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#slides {
+  display: none;
+  /*width: 700px;*/
+  height: 400px;
+  margin: 0 auto;
+}
+
+.slidesjs-container {
+	/*width: 90% !important;
+	height: 90% !important;*/
+	margin: 0 auto;
+}
+
+.main-ul-links {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	padding-top: 40px;
+
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.main-ul-links li a:hover {
+	text-decoration: none;
+}
+
+
+.footerLinks {
+	list-style: none;
+	overflow: auto;
+
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+
+	padding-top: 75px;
+	padding-bottom: 60px;
+}
+
+.footerLinks li {
+	float: left;
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+.footerLinks li a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #6F7375;
+}
+
+.footerLinks li a:hover {
+	color: #A5AAAD;
+}
+
+#page-footer hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(88, 88, 88, 0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(88, 88, 88, 0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(88, 88, 88, 0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(88, 88, 88, 0.75), rgba(0,0,0,0)); 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.subtleLink {
+	color: #535B64;
+}
+
+.subtleLink a{
+	color: #495E75;
+	text-decoration: none;
+}
+
+.subtleLink a:hover{
+	color: #577799;
+}
+
+#page-footer {
+	background-color: #222;
+}
+
+.lowerInfo {
+	padding-top: 30px;
+}
+
+.lowerInfo h2 {
+	color: #D1450F;
+}
+
+
+/* responsive display */
+/* For tablets & smart phones */
+
+@media (max-width: 600px) {
+  .footerLinks {
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  }
+
+  .footerLinks li {
+  	float: none;
+  	padding-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container {
+    width: auto
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .container {
+    width: auto
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px
+  }
+}
+
+@media (max-width: 600px) {
+	#slides {
+		height: 350px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	#slides {
+		height: 300px !important;
+	}
+}
+
+@media (max-width: 400px) {
+	#slides {
+		height: 250px !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.main-ul-links {
+		padding-top: 0px;
+	}
+
+	.projectTitle {
+		margin-bottom: 0px;
+	}
+
+	#slides {
+		margin-top: 30px;
+	}
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
+
+
+
+
+
+
+
+
+
+
+
